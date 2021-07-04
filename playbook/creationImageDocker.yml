@@ -1,12 +1,12 @@
 - hosts: localhost
   become: yes
   - name: Log into DockerHub
-    community.docker.docker_login:
+    docker_login:
       username: izh0407
       password: Sefasboys47 
     
   - name: Build an image and push it to docker hub
-    community.docker.docker_image:
+    docker_image:
       build:
         path: ./
       name: izh0407/springbootapprepo
