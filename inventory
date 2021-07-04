@@ -1,1 +1,1 @@
-localhost ansible_ssh_host=192.168.33.10
+localhost  ansible_connection: local ansible_ssh_host=192.168.33.10 ansible_python_interpreter: "{{ansible_playbook_python}}"

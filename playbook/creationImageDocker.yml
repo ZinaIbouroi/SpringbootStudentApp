@@ -1,6 +1,6 @@
 - hosts: localhost
   environment:
-    PYTHONPATH: "{{ lookup('env','PYTHONPATH') }}:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/site-packages"
+    PYTHONPATH: "{{ lookup('env','PYTHONPATH') }}:/usr/local/lib/python3/dist-packages"
   tasks:
     - name: Log into DockerHub
       docker_login:
