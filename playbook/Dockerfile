@@ -1,4 +1,4 @@
 FROM openjdk:7
-COPY SpringbootStudentApp/ /usr/src/myapp
+COPY target/ /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD ["java", "SpringbootThymeleafWebAppApplication"]
