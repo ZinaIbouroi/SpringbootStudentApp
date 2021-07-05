@@ -11,8 +11,7 @@
       docker_image:
         build:
           path: ./
-          source: build
         name: izh0407/springbootapprepo
         tag: v1
         push: yes
-        
+        source: build
